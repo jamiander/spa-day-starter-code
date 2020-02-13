@@ -24,3 +24,13 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+.color1 {
+background-color: pink;
+}
+.color2 {
+background-color: red;
+}
+.color3 {
+background-color: blue;
+}
