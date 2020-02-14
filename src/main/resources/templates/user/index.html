@@ -2,9 +2,11 @@
 <html lang="en" xmlns:th="http:/>/www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8"/>
-    <title>Alice's Wonderland Spa</title>
+    <title>Alice's Wonderland Spa!</title>
 </head>
 <body>
-        <p>Welcome {username}</p>
+    <a th:href="@{/}">
+        <p>Welcome<span th:text="@{user.username}"></span></p>
+    </a>
 </body>
 </html>

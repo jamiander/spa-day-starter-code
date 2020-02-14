@@ -26,13 +26,9 @@ public class UserController {
         model.addAttribute("user", user);
         model.addAttribute("verify", verify);
 
-        /*model.addAttribute("username", user.getUsername());
-        model.addAttribute("email", user.getEmail());
-        model.addAttribute("password", user.getPassword());*/
-
-        /*if (verify != user.getPassword()) {
+        if (!verify.equals(user.getPassword())) {
             return "user/add";
-    }*/
+    }
         return "user/index";
     }
 }
